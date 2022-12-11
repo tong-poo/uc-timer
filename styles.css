@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+* {
+  margin: 0;
+}
+
+#clock-wrapper {
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #444 0%, #000 70%);
+}
+#clock-wrapper.transam {
+  background: #fff;
+}
+
+#clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-family: "Share Tech Mono", monospace;
+  color: #ffffff;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgb(0, 217, 255);
+}
+
+#clock.transam {
+  color: red;
+  text-shadow: 0 0 7px #ff7676;
+}
+
+#time {
+  letter-spacing: 0.05em;
+  padding: 5px 0;
+  font-size: 60px;
+}
+@media screen and (min-width: 600px) {
+  #time {
+    font-size: 100px;
+  }
+}
+
+#date {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+
+#canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
